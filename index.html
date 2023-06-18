@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>テルミン</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/ress@4.0.0/dist/ress.min.css">
+    <link rel="stylesheet" href="src/style.css">
+</head>
+<body>
+    <div class="frame">
+        <main class="main">
+            <h1 class="title">テルミン</h1>
+            <div class="controllers">
+                <button class="controllers__button" id="play">Play</button>
+            </div>
+            </main>
+        <aside class="aside">
+            <div class="canvas">
+                <video id="video" hidden></video>
+                <canvas class="canvas__body player" id="canvas" width="672" height="504"></canvas>
+            </div>
+            <div class="result" id="result" ></div>
+        </aside>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/camera_utils/camera_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/drawing_utils/drawing_utils.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@mediapipe/hands/hands.js"></script>
+    <script src="src/script.js"></script>
+</body>
+</html>
